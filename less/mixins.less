@@ -1,1 +1,16 @@
 // Mixins in here
+.flex( @justify-content, @align-items) {
+    display: flex;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+.btn-green-bg() {
+    background:@button-bg;
+    .flex(center,center);
+    width: 80%;
+    height: 4.5rem;
+    border-radius: 1.5rem;    
+    color: @main-bg;
+    font-size: 1.8rem;
+}   
