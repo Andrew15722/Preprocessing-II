@@ -7,10 +7,23 @@
     margin: 0 auto;
 
     @media @mobile {
-        width: 50rem;
-        .flex(space-between, center);
+        width: 48.3rem;
+        .flex(space-around, center);
         flex-wrap: wrap;
-        background:lightblue; 
+        margin-left: -10rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+        margin-right: auto;
+
+        @media @mobile {
+            order: -1;
+            width: 100%;
+            margin-left: 15.5rem;
+            margin-top: 1rem;
+            font-size: 3rem ;
+        }
     }
 
     a {
@@ -21,17 +34,7 @@
         color: black;
 
         @media @mobile {
-
-        }
-    }
-
-    h2 {
-        font-size: 4rem;
-        margin-right: auto;
-
-        @media @mobile {
-            order: -1;
-            width: 100%;
+            margin-bottom: .5rem
         }
     }
 } 
